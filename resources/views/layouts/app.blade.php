@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ $title ?? 'Page Title' }}</title>
     
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/build/manifest.webmanifest">
     <link rel="icon" href="/icons/icon-192x192.png">
 
     <style>
@@ -34,8 +34,8 @@
                 
                 {{-- Brand --}}
                 {{-- <x-app-brand /> --}}
-                {{-- <div class="font-bold text-2xl text-emerald-600">GSD</div> --}}
-                <img src="icons/icon-192.png" class="w-10" alt="">
+                <div class="font-bold text-2xl text-emerald-600">GSD</div>
+                {{-- <img src="icons/icon-192.png" class="w-10" alt=""> --}}
             </x-slot:brand>
             
             {{-- Right side actions --}}
